@@ -20,7 +20,7 @@ function subl
             set my_args $my_args $i
         end
     end
-    /./mnt/c/Program\ Files/Sublime\ Text\ 3/subl.exe $my_args > /dev/null 2>&1
+    /./mnt/c/Program\ Files/Sublime\ Text/subl.exe $my_args > /dev/null 2>&1
 end
 function temp
     set my_args
@@ -31,8 +31,9 @@ function mkc
 	cd "$argv[1..-1]"
 end
 
-alias uni='cd /mnt/c/vladimir/Documents/University/Spring\ 2021'
+alias uni='cd /mnt/c/vladimir/Documents/University/Spring\ 2022'
 alias note='cd /mnt/c/vladimir/Notes'
 alias rm='echo Use 'trash', or the full path '/bin/rm''
 alias n='/./mnt/c/Windows/explorer.exe .'
 alias fd='fdfind'
+alias texclean='trash *.aux *.fdb_latexmk *.fls *.out *.synctex.gz *.log'
